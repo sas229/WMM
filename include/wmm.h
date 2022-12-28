@@ -1,3 +1,7 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifndef WMM_H
 #define WMM_H
 
@@ -41,4 +45,8 @@ float wmm_get_date(uint8_t year, uint8_t month, uint8_t date);
  */
 void E0000(float glat, float glon, float time_years, float *dec);
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
